@@ -1,0 +1,246 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+body {
+    background: url('http://opendataday.org/images/bg.png') fixed repeat;
+	font-family: 'Oxygen', sans-serif;
+}
+
+.page-wrapper {
+    background: url(/img/grad-sphere.png) fixed no-repeat center top;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.4em;
+}
+
+
+a, a:focus, a:visited { text-decoration:none; font-weight:bold; color:#000000; }
+a:hover { text-decoration:none; font-weight:bold; color:#fbe106; }
+#footer a:active { text-decoration:none; font-weight:bold; background-color:#000; }
+
+.yellow-row a:hover {
+  color: #000;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.header-row {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  b-ackground-color: #fbe106;
+}
+
+.logo {
+  display: block;
+  padding: 10px;
+}
+
+.nav {
+  margin-top: 5px;
+}
+
+.nav > a {
+  padding: 4px 8px 7px;
+  text-transform: uppercase;
+}
+
+.nav > a.light {
+  color: #000;
+  background-color: #fff;
+}
+
+.nav > a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.nav > a.img-nav:hover {
+  background-color: transparent;
+}
+
+.white-row {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 20px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.dark-row {
+  background-color: #00b6ff;
+  color: #fff;
+}
+
+.footer-row {
+  padding: 1em 0;
+  background-color: #000;
+}
+
+.footer-row > div > a {
+  padding: 0 0.5em;
+}
+
+.big-link {
+  font-size: 140%;
+  margin: 20px;
+  display: block;
+}
+
+.big-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.heading {
+	font-family: 'Oxygen';
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.flat-b {
+	padding: 18px;
+}
+.image-box {
+	padding: 18px;
+}
+
+.left {
+	float: left;
+	width: 383px;
+	padding: 0 20px;
+	margin: 10px 0 0 0;
+}
+.right {
+	float: left;
+	width: 370px;
+	margin: 10px 0 0 0;
+
+}
+
+.bilder {
+	float: left;
+	width: 820px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.bilder-space{
+	margin: 10px 10px 10px 10px;
+}
+
+.ueber {
+	float: left;
+	width: 600px;
+	padding: 0 20px 0 27px;
+}
+
+.right_top {
+	float: right;
+	width: 40px;
+	margin: 5px 0 0 0;
+}
+
+.right1_top {
+	float: right;
+	margin: 15px 20px 0 0;s
+}
+
+.pics_1{
+	margin: 7px 7px 7px 7px;
+}
+
+.pics_2{
+	margin: 7px 7px 7px 7px;
+}
+
+.pics_3{
+	margin: 7px 7px 7px 7px;
+}
+
+.box-header {
+	margin: 0;
+	padding: 10px 20px;
+  background-color: black;
+  color: #fff !important;
+  display: inline-block;
+}
+
+a.box-header:hover {
+  color: #fbe106 !important;;
+}
+
+.city-list{
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 12px;
+}
+
+.box .box-content {
+	border: 2px solid #e5e6e6;
+	padding: 5px;
+}
+
+.box {
+	margin-bottom: 10px;
+}
+
+.impressum a:link,
+.impressum a:visited,
+.impressum a:hover,
+.impressum a:active,
+.impressum a:focus {
+	font-size: 10px;
+	color: #6E6E6E;
+}
+
+#map {
+  position: relative;
+  height: 464px;
+  width: 100%;
+}
+
+@media (min-width: 970px) {
+  .map-container {
+    padding-left: 0 !important;
+  }
+  .box .box-content.city-info {
+    overflow: auto;
+    height: 295px;
+  }
+}
+
+@media (max-width: 970px) {
+  .map-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+#mc-embedded-subscribe-form {
+	margin-top: 20px;
+}
+
+#mc-embedded-subscribe-form input, #mc-embedded-subscribe-form textarea{
+	font-size: 18px;
+	padding: 5px;
+	width: 300px;
+}
+
+#mc-embedded-subscribe-form textarea{
+	height: 90px;
+	margin: 5px 0;
+}
+
+#mc-embedded-subscribe-form input.button {
+	border-radius: 0;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+}

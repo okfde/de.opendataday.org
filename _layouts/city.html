@@ -1,0 +1,61 @@
+---
+layout: default
+
+---
+
+{{ content }}
+
+
+<div class="row white-row">
+  <div class="col-lg-6 col-md-6 map-container">
+    <div id="map"></div>
+  </div>
+  <div class="col-lg-6 col-md-6">
+    <h2>&lt;wahllokal/&gt; {{ page.name }}</h2>
+    <ul class="city-list">
+      <li class="box">
+        <div class="box-header">&lt;wahllokal/&gt; {{ page.name }}</div>
+        <div class="box-content">
+          {{ page.where }}<br/>
+          {{ page.when }}
+        </div>
+      </li>
+      {% if page.info %}
+      <li class="box">
+        <div class="box-content city-info">
+          {{ page.info }}
+        </div>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var map = L.map(
+      'map',
+      {
+        dragging: false,
+        touchZoom: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        zoomControl: false,
+        keyboard: false
+      }
+    ).setView([{{ page.lat }}, {{ page.lng }}], 16);
+
+    L.tileLayer('http://{s}.tile.cloudmade.com/925ede8aa027411da7b5c04de7be80a9/96931/256/{z}/{x}/{y}.png').addTo(map);
+    map.attributionControl.setPrefix(false);
+    map.attributionControl.addAttribution('Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>');
+
+    var marker = L.marker(
+      [{{ page.lat }}, {{ page.lng }}],
+      {
+        clickable: true,
+        title: 'Wahllokal {{ page.name }}'
+      }
+    ).addTo(map);
+  }());
+</script>

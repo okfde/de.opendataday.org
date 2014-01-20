@@ -1,0 +1,121 @@
+---
+title: Willkommen
+layout: default
+--- 
+<div class="row white-row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Am 22. Februar treffen sich weltweit Entwickler, um Open Data nützlich zu machen.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+          Es ist wieder soweit, auch in 2014 wird es wieder einen internationalen Open Data Hackathon geben. Am 22. Februar wird auf Events rund um den Globus mit offenen Daten gearbeitet. Ziel ist es die Bekanntheit von Open Data zu steigern, weitere Daten zu öffnen und zu zeigen, welches Potenzial in offenen Daten steckt.
+        </p>
+    	</div>
+    	<div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+          Der Open Data Day ist Community Event, das heißt, jeder ist willkommen mitzumachen und eine Veranstaltung zu organisieren. Egal ob großer Hackday oder kleine Stammtischrunde, Ziel ist es so viele Leute wie möglich zu versammeln, Spaß zu haben, sich auszutauschen, zu experimentieren und Anwendungen und Visualisierungen rund um offene Daten zu bauen.
+        </p>
+    	</div>
+  	</div>
+  </div>
+</div>
+
+<div class="row dark-row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Beispiele</h2>
+      </div>
+    </div>
+    <div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      	<a target="_blank" href="http://census.okfn.org/">
+          <img alt="Open Data Census" class="img-responsive" src="/img/census.png">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      	<a target="_blank" href="http://offeneskoeln.de">
+          <img alt="Offenes Köln" class="img-responsive" src="/img/offeneskoeln.png">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+    	  <a target="_blank" href="http://www.offenerhaushalt.de">
+          <img alt="OffenerHaushalt" class="img-responsive" src="/img/offenerhaushalt.png">
+        </a>
+      </div>
+		</div>
+  </div>
+</div>
+
+<div class="row white-row">
+  <div class="col-lg-6 col-md-6 map-container">
+    <div id="map"></div>
+  </div>
+  <div class="col-lg-6 col-md-6">
+    <h2>STÄDTE UND EVENTS</h2>
+    <ul class="city-list">
+      {% for event in site.pages %}
+        {% if event.tags contains "event" %}
+          <li class="box">
+            <a class="box-header" href="{{ event.url|replace:"index.html","" }}">
+              {{ event.name }}
+            </a>
+            <div class="box-content">
+              {{ event.where }}<br/>
+              {{ event.when }}
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+       <li class="box">
+        <div class="box-header">Deine Stadt</div>
+        <div class="box-content">
+          Trag Dich im <a href="http://wiki.opendataday.org/2014/City_Events">Open Data Day-Wiki</a> ein, und
+          plane einen Hackday in Deiner eigenen Stadt!
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var map = L.map(
+      'map',
+      {
+        dragging: false,
+        touchZoom: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        zoomControl: false,
+        keyboard: false
+      }
+    ).setView([51.0834196, 10.4234469], 5);
+
+    L.tileLayer('http://{s}.tile.cloudmade.com/925ede8aa027411da7b5c04de7be80a9/96931/256/{z}/{x}/{y}.png').addTo(map);
+    map.attributionControl.setPrefix(false);
+    map.attributionControl.addAttribution('Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>');
+
+    var markers = [];
+    {% for event in site.pages %}
+      {% if event.tags contains "event" %}
+        var marker = L.marker(
+          [{{ event.lat }}, {{ event.lng }}],
+          {
+            clickable: true,
+            title: 'Wahllokal {{ event.name }}'
+          }
+        ).addTo(map);
+        marker.on('click', function() {
+          window.location.href = '{{ event.url|replace:"index.html","" }}';
+        });
+        markers.push(marker);
+      {% endif %}
+    {% endfor %}
+  }());
+</script>
