@@ -19,13 +19,17 @@ h1, h2 {
   line-height: 1.4em;
 }
 
-
 a, a:focus, a:visited { text-decoration:none; font-weight:bold; color:#000000; }
-a:hover { text-decoration:none; font-weight:bold; color:#fbe106; }
+a:hover { text-decoration:none; font-weight:bold; color:#00b6ff; }
 #footer a:active { text-decoration:none; font-weight:bold; background-color:#000; }
 
 .yellow-row a:hover {
-  color: #000;
+  color: #00b6ff;
+}
+
+.h2color{
+color: #00b6ff;
+
 }
 
 .row {
@@ -92,7 +96,7 @@ a:hover { text-decoration:none; font-weight:bold; color:#fbe106; }
 }
 
 .big-link:hover {
-  color: #333;
+  color: #00b6ff;
   text-decoration: underline;
 }
 
@@ -171,7 +175,7 @@ a:hover { text-decoration:none; font-weight:bold; color:#fbe106; }
 }
 
 a.box-header:hover {
-  color: #fbe106 !important;;
+  color: #00b6ff !important;;
 }
 
 .city-list{
@@ -187,6 +191,14 @@ a.box-header:hover {
 
 .box {
 	margin-bottom: 10px;
+}
+
+.box-header-dark {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #00b6ff;
+  color: #fff !important;
+  display: inline-block;
 }
 
 .impressum a:link,
