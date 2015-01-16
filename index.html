@@ -106,9 +106,9 @@ layout: default
         zoomControl: false,
         keyboard: false
       }
-    ).setView([51.0834196, 10.4234469], 5);
+    ).setView([51.0834196, 10.4234469], 6);
 
-    var tileServer = 'http://tiles.codefor.de/static/OSMBright/{z}/{x}/{y}.png'
+    var tileServer = 'http://tiles.codefor.de/static/bbs/germany/{z}/{x}/{y}.png';
     L.tileLayer(tileServer).addTo(map);
     map.attributionControl.setPrefix(false);
     map.attributionControl.addAttribution('Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>');
