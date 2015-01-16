@@ -22,6 +22,8 @@ h1, h2 {
 a, a:focus, a:visited { text-decoration:none; font-weight:bold; color:#000000; }
 a:hover { text-decoration:none; font-weight:bold; color:#00b6ff; }
 #footer a:active { text-decoration:none; font-weight:bold; background-color:#000; }
+ 
+#news a:hover {text-decoration:none; color:#000000;}
 
 .yellow-row a:hover {
   color: #00b6ff;
@@ -212,7 +214,7 @@ a.box-header:hover {
 
 #map {
   position: relative;
-  height: 464px;
+  height: 600px;
   width: 100%;
 }
 
