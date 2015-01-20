@@ -73,7 +73,7 @@ layout: default
       {% for event in site.pages %}
         {% if event.tags contains "event" %}
           <li class="box">
-            <a class="box-header" href="{{ event.url|replace:"index.html","" }}">
+            <a class="box-header" href="{{ event.url|replace:"index.html",""|replace:".html","" }}">
               {{ event.name }}
             </a>
             <div class="box-content">
