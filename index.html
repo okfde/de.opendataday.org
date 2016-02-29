@@ -70,7 +70,8 @@ layout: default
   <div class="col-lg-6 col-md-6">
     <h2>EVENTS</h2>
     <ul class="city-list">
-      {% for event in site.pages %}
+      {% assign events = site.pages | sort: 'eventTitle' %}
+      {% for event in events  %}
         {% if event.tags contains "event" %}
           <li class="box">
             <a class="box-header" href="{{ event.url|replace:"index.html",""|replace:".html","" }}">
