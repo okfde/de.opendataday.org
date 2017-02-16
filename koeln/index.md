@@ -5,7 +5,7 @@ eventTitle: Köln
 title: Hack Your City
 lat: 50.930398
 lng: 6.946791
-where: '<a href="http://hq-cologne.de/downtown">Headquarters Downtown</a>, Neue Weyerstraße 2, 50676 Köln
+where: <a href="http://hq-cologne.de/downtown">Headquarters Downtown</a>, Neue Weyerstraße 2, 50676 Köln
 when: 'Samstag, 4. März ⎥  9.30 Uhr bis Sonntag, 5. März ⎥ 17.00 Uhr
 <br>Komm vorbei:<a href="https://www.eventbrite.com/e/hack-your-city-koln-tickets-31149547134">Melde dich bei Eventbride an</a>'
 tags: 
@@ -20,4 +20,4 @@ ermöglichen in Kleingruppen Stadtprobleme zu lösen und Stadtvisionen zu realis
 An diesem Wochenende ist die Auftaktveranstaltung für Köln damit sich Akteure und Ideen finden können, um dann selbständig in 
 Citizen Science Labs an Lösungen und Visionen zu arbeiten.</p>
 
-Mehr Infos & Anmeldung bei <a href="http://www.hackyourcity.de/koeln/">Hack Your City</a></p>
+Mehr Infos & Anmeldung bei <a href="http://www.hackyourcity.de/koeln/">Hack Your City</a>
