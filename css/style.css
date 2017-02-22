@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('http://opendataday.org/images/bg.png') fixed repeat;
+    background: #47334e;
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -20,17 +20,17 @@ h1, h2 {
 }
 
 a, a:focus, a:visited { text-decoration:none; font-weight:bold; color:#000000; }
-a:hover { text-decoration:none; font-weight:bold; color:#00b6ff; }
+a:hover { text-decoration:none; font-weight:bold; color:#45c3c2; }
 #footer a:active { text-decoration:none; font-weight:bold; background-color:#000; }
  
 #news a:hover {text-decoration:none; color:#000000;}
 
 .yellow-row a:hover {
-  color: #00b6ff;
+  color: #45c3c2;
 }
 
 .h2color{
-color: #00b6ff;
+color: #45c3c2;
 
 }
 
@@ -39,15 +39,15 @@ color: #00b6ff;
 }
 
 .header-row {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 40px;
-  b-ackground-color: #fbe106;
 }
 
 .logo {
   display: block;
   padding: 10px;
 }
+
 
 .nav {
   margin-top: 5px;
@@ -78,13 +78,13 @@ color: #00b6ff;
 }
 
 .dark-row {
-  background-color: #00b6ff;
+  background-color: #45c3c2;
   color: #fff;
 }
 
 .footer-row {
   padding: 1em 0;
-  background-color: #000;
+  background-color: #47334e;
 }
 
 .footer-row > div > a {
@@ -98,7 +98,7 @@ color: #00b6ff;
 }
 
 .big-link:hover {
-  color: #00b6ff;
+  color: #45c3c2;
   text-decoration: underline;
 }
 
@@ -153,7 +153,7 @@ color: #00b6ff;
 
 .right1_top {
 	float: right;
-	margin: 15px 20px 0 0;s
+	margin: 15px 20px 0 0;
 }
 
 .pics_1{
@@ -177,7 +177,7 @@ color: #00b6ff;
 }
 
 a.box-header:hover {
-  color: #00b6ff !important;;
+  color: #45c3c2 !important;;
 }
 
 .city-list{
@@ -198,7 +198,7 @@ a.box-header:hover {
 .box-header-dark {
   margin: 0;
   padding: 10px 20px;
-  background-color: #00b6ff;
+  background-color: #45c3c2;
   color: #fff !important;
   display: inline-block;
 }
