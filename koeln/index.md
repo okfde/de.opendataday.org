@@ -7,7 +7,7 @@ lat: 50.930398
 lng: 6.946791
 where: <a href="http://hq-cologne.de/downtown">Headquarters Downtown</a>, Neue Weyerstraße 2, 50676 Köln
 when: 'Samstag, 4. März ⎥  9.30 Uhr bis Sonntag, 5. März ⎥ 17.00 Uhr
-<br>Komm vorbei:<a href="https://www.eventbrite.com/e/hack-your-city-koln-tickets-31149547134">Melde dich bei Eventbride an</a>'
+<br>Komm vorbei: <a href="https://www.eventbrite.com/e/hack-your-city-koln-tickets-31149547134">Melde dich bei Eventbride an</a>'
 tags: 
   - event
 published: true
