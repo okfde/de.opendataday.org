@@ -109,10 +109,10 @@ layout: default
       }
     ).setView([51.0834196, 10.4234469], 6);
 
-    var tileServer = 'http://tiles.codefor.de/static/bbs/germany/{z}/{x}/{y}.png';
+    var tileServer = 'https://api.mapbox.com/styles/v1/okfde/ciyk33cuj001u2ro9qpglwmvd/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib2tmZGUiLCJhIjoiY2lpOHhvMnNhMDAyNnZla280ZWhmMm96NyJ9.IvGz74dvvukg19B4Npsm1g';
     L.tileLayer(tileServer).addTo(map);
     map.attributionControl.setPrefix(false);
-    map.attributionControl.addAttribution('Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>');
+    map.attributionControl.addAttribution('© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>');
 
     var markers = [];
     {% for event in site.pages %}
